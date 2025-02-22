@@ -1,0 +1,11 @@
+.contenedorPrincipalHeader{
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorPrincipalHeader img{
+    object-fit: contain;
+    height: 9rem;
+    margin: 0.5rem 0;
+}

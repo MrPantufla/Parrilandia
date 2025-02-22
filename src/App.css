@@ -1,0 +1,88 @@
+html{
+  background-color: rgb(39, 38, 38);
+  height: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --Naranja: #ff7326;
+}
+
+@font-face {
+  font-family: 'Borui';
+  src: url('./Fuentes/borui.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Copperplate';
+  src: url('./Fuentes/copperplategothic_bold.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 🔹 Tamaño base por defecto */
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+/* 📱 Móvil Pequeño (<360px) */
+@media (max-width: 359px) {
+  html {
+    font-size: 14px; /* 1rem = 14px */
+  }
+}
+
+/* 📱 Móvil Mediano (360px - 480px) */
+@media (min-width: 360px) and (max-width: 480px) {
+  html {
+    font-size: 15px; /* 1rem = 15px */
+  }
+}
+
+/* 📱 Móvil Grande (481px - 600px) */
+@media (min-width: 481px) and (max-width: 600px) {
+  html {
+    font-size: 16px; /* 1rem = 16px */
+  }
+}
+
+/* 📱 Tablet Pequeña (601px - 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  html {
+    font-size: 17px; /* 1rem = 17px */
+  }
+}
+
+/* 📱 Tablet Grande (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 18px; /* 1rem = 18px */
+  }
+}
+
+/* 🖥️ Laptop / Escritorio Pequeño (1025px - 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  html {
+    font-size: 18px; /* 1rem = 18px */
+  }
+}
+
+/* 🖥️ Escritorio Mediano (1367px - 1600px) */
+@media (min-width: 1367px) and (max-width: 1600px) {
+  html {
+    font-size: 19px; /* 1rem = 19px */
+  }
+}
+
+/* 🖥️ Escritorio Grande (>1600px) */
+@media (min-width: 1601px) {
+  html {
+    font-size: 20px; /* 1rem = 20px */
+  }
+}

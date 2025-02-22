@@ -1,0 +1,10 @@
+.contenedorPrincipalBody{
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    width: 49.5%;
+}

@@ -1,0 +1,18 @@
+.contenedorPrincipalFooter{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedorPrincipalFooter{
+    color: white;
+}
+
+.contenedorPrincipalFooter p{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenedorPrincipalFooter p svg{
+    color: rgba(255, 115, 38, 1);
+}
