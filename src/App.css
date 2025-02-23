@@ -1,6 +1,13 @@
 html{
-  background-color: rgb(39, 38, 38);
+  height: 100vh;
+  background-color: var(--Gris);
+}
+
+body, #root{
   height: 100%;
+  overflow: auto;
+  width: 100vw !important;
+  overflow-x: hidden;
 }
 
 *{
@@ -10,18 +17,26 @@ html{
 
 :root{
   --Naranja: #ff7326;
+  --Gris: rgb(39, 38, 38);
 }
 
 @font-face {
   font-family: 'Borui';
-  src: url('./Fuentes/borui.otf') format('opentype');
+  src: url('/Fuentes/borui.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Copperplate';
-  src: url('./Fuentes/copperplategothic_bold.ttf') format('opentype');
+  src: url('/Fuentes/copperplategothic_bold.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Atma';
+  src: url('/Fuentes/LoveYaLikeASister-Regular.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }

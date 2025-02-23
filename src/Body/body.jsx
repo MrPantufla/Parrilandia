@@ -3,31 +3,32 @@ import './body.css';
 import Categoria from './Categoria/categoria';
 
 export default function Body() {
-
-    const { rows } = useDatos();
+    const { rows, categoriasRefs, setMenuAbierto } = useDatos();
 
     return (
-        <div className="contenedorPrincipalBody">
+        <div className="contenedorPrincipalBody" onClick={() => setMenuAbierto(false)}>
             <div className="columna columnaIzquierda">
                 {rows.map((row, index) => {
                     let categoria = row[0];
                     let imagen = row[1];
-                    let productos = row.slice(2).filter((p) => p != "");
+                    let productos = row.slice(2).filter((p) => p !== "");
 
-                    console.log(productos)
                     const columna = index % 2 === 0 ? 'izquierda' : 'derecha';
 
-                    // Condicional para filtrar por índice par (por ejemplo)
                     return index % 2 === 0 && (
-                        <Categoria
-                            categoria={categoria}
-                            imagen={imagen}
-                            productos={productos}
-                            columna={columna}
-                            anchoImagen="20"
-                            altoImagen="15"
+                        <div
                             key={index}
-                        />
+                            ref={(ref) => categoriasRefs.current[index] = ref} // Asignar la referencia aquí
+                        >
+                            <Categoria
+                                categoria={categoria}
+                                imagen={imagen}
+                                productos={productos}
+                                columna={columna}
+                                anchoImagen="20"
+                                altoImagen="15"
+                            />
+                        </div>
                     );
                 })}
             </div>
@@ -39,17 +40,20 @@ export default function Body() {
                     const productos = row.slice(2);
                     const columna = index % 2 === 0 ? 'izquierda' : 'derecha';
 
-                    // Condicional para filtrar por índice par (por ejemplo)
                     return index % 2 === 1 && (
-                        <Categoria
-                            categoria={categoria}
-                            imagen={imagen}
-                            productos={productos}
-                            columna={columna}
-                            anchoImagen="20"
-                            altoImagen="15"
+                        <div
                             key={index}
-                        />
+                            ref={(ref) => categoriasRefs.current[index] = ref} // Asignar la referencia aquí también
+                        >
+                            <Categoria
+                                categoria={categoria}
+                                imagen={imagen}
+                                productos={productos}
+                                columna={columna}
+                                anchoImagen="20"
+                                altoImagen="15"
+                            />
+                        </div>
                     );
                 })}
             </div>

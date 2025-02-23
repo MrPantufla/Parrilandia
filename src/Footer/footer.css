@@ -1,5 +1,10 @@
 .contenedorPrincipalFooter{
     display: flex;
+    flex-direction: column;
+}
+
+.contactoContainer{
+    display: flex;
     justify-content: space-around;
 }
 
@@ -7,7 +12,7 @@
     color: white;
 }
 
-.contenedorPrincipalFooter p{
+.contactoContainer p{
     height: 3rem;
     display: flex;
     align-items: center;
@@ -15,4 +20,22 @@
 
 .contenedorPrincipalFooter p svg{
     color: rgba(255, 115, 38, 1);
+}
+
+.footerPersonal{
+    height: 1.5rem;
+    background-color: var(--Naranja);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: black;
+}
+
+.footerPersonal p{
+    margin-right: 0.5rem;
+}
+
+.footerPersonal a{
+    color: blue;
+    font-weight: 600;
 }
