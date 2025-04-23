@@ -9,8 +9,8 @@ export default function Body() {
         <div className="contenedorPrincipalBody" onClick={() => setMenuAbierto(false)}>
             <div className="columna columnaIzquierda">
                 {rows.map((row, index) => {
-                    let categoria = row[0];
-                    let imagen = row[1];
+                    let categoria = row[1];
+                    let imagen = row[2];
                     let productos = row.slice(2).filter((p) => p !== "");
 
                     const columna = index % 2 === 0 ? 'izquierda' : 'derecha';
@@ -18,7 +18,7 @@ export default function Body() {
                     return index % 2 === 0 && (
                         <div
                             key={index}
-                            ref={(ref) => categoriasRefs.current[index] = ref} // Asignar la referencia aquí
+                            ref={(ref) => categoriasRefs.current[index] = ref}
                         >
                             <Categoria
                                 categoria={categoria}
@@ -35,15 +35,15 @@ export default function Body() {
 
             <div className="columna columnaDerecha">
                 {rows.map((row, index) => {
-                    const categoria = row[0];
-                    const imagen = row[1];
+                    const categoria = row[1];
+                    const imagen = row[2];
                     const productos = row.slice(2);
                     const columna = index % 2 === 0 ? 'izquierda' : 'derecha';
 
                     return index % 2 === 1 && (
                         <div
                             key={index}
-                            ref={(ref) => categoriasRefs.current[index] = ref} // Asignar la referencia aquí también
+                            ref={(ref) => categoriasRefs.current[index] = ref}
                         >
                             <Categoria
                                 categoria={categoria}

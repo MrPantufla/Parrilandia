@@ -20,6 +20,13 @@ body, #root{
   --Gris: rgb(39, 38, 38);
 }
 
+.app{
+  background-image: url('/Imagenes/fondo.png');
+  background-size: contain;
+  max-width: 767px;
+  margin: 0 auto;
+}
+
 @font-face {
   font-family: 'Borui';
   src: url('/Fuentes/borui.otf') format('opentype');

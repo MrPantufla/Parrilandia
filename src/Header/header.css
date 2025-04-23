@@ -1,13 +1,20 @@
 .contenedorPrincipalHeader{
-    height: 12rem;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .contenedorPrincipalHeader img{
     object-fit: contain;
     height: 11rem;
-    margin: 0.5rem 0;
+}
+
+.subtitulo{
+    color: #cd102b;
+    margin-bottom: 1rem;
+    font-family: Borui;
+    text-align: center;
+    font-size: 1.8rem;
 }
 
 .botonMenu{
@@ -35,4 +42,33 @@
     width: 2.5rem;
     height: 2.5rem;
     fill: white;
+}
+
+.contenedorTiposDePago{
+    color: white;
+    font-family: Copperplate;
+}
+
+.contenedorTiposDePago h1{
+    font-size: 1rem;
+    text-align: center;
+    width: 95%;
+    margin: 0 auto 1rem auto;
+}
+
+.contenedorTiposDePago p{
+    width: 95%;
+    font-size: 0.7rem;
+    margin: 0.5rem auto;
+}
+
+.separadorCreditoYDigital{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.separadorCreditoYDigital p{
+    width: 50%;
+    text-align: center;
 }

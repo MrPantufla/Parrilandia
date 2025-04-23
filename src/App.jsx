@@ -8,14 +8,14 @@ import { DatosProvider } from './datosContext.jsx'
 function App() {
 
   return (
-    <>
+    <div className="app">
       <DatosProvider>
         <Header />
         <Body />
         <Menu/>
         <Footer />
       </DatosProvider>
-    </>
+    </div>
   )
 }
 

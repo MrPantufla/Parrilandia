@@ -14,7 +14,7 @@ export default function Menu() {
         }
     };
 
-    const categorias = rows.map(subarray => subarray[0]);
+    const categorias = rows.map(subarray => subarray[1]);
 
     return (
         <div className={`contenedorPrincipalMenu ${menuAbierto ? 'abierto' : 'cerrado'}`}>

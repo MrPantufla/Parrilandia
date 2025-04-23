@@ -5,7 +5,7 @@ export default function Categoria(args) {
 
     return (
         <div className="contenedorPrincipalCategoria">
-            {args.columna == 'izquierda' && <img src={args.imagen || ""} />}
+            {args.columna == 'derecha' && <img src={args.imagen || null} />}
             <h1>{args.categoria}</h1>
             <div className={`lista ${args.columna}`}>
                 {productos.map((item, index) => (
@@ -17,7 +17,7 @@ export default function Categoria(args) {
                     )
                 ))}
             </div>
-            {args.columna == 'derecha' && <img src={args.imagen || ""} />}
+            {args.columna == 'izquierda' && <img src={args.imagen || null} />}
         </div >
     );
 }
