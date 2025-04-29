@@ -32,10 +32,11 @@
 }
 
 .footerPersonal p{
-    margin-right: 0.5rem;
+    margin-right: 0.5rem;   
 }
 
 .footerPersonal a{
-    color: blue;
+    color: rgb(66, 66, 252);
     font-weight: 600;
+    text-decoration: none;
 }

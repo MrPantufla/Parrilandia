@@ -16,7 +16,7 @@ export default function Footer() {
             </div>
             <div className="footerPersonal">
                 Programación y diseño:<span> </span>
-                <a target="blank" href={esCelular ? ('https://wa.me/5493456414062') : ('https://web.whatsapp.com/send?phone=+5493456414062')}>
+                <a target="blank" href='https://juan-manuel-pizzio.web.app/'>
                     <p>Juan Manuel Pizzio</p>
                 </a>
             </div>
